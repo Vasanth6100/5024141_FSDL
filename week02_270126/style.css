@@ -1,0 +1,125 @@
+
+/* ---------- CSS SYNTAX ---------- */
+/* selector { property: value; } */
+
+body {
+    background: linear-gradient(to right, #8a9fe4, #a8ccf1); /* background */
+    font-family: 'Segoe UI', Verdana, sans-serif; /* fonts */
+    color: #272727; /* color */
+    margin: 30px;
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+    color: #155ea7;
+    text-align: center;
+}
+
+h4 {
+    color: #004080;
+    margin-top: 25px;
+}
+
+/* ---------- PARAGRAPH & TEXT ---------- */
+p {
+    font-size: px;
+    line-height: 1.6;
+}
+
+/* ---------- LINK (Pseudo-class) ---------- */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {               /* pseudo-class */
+    color: #ff6600;
+    text-decoration: underline;
+}
+
+/* ---------- IMAGE ---------- */
+img {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
+
+/* ---------- TABLE ---------- */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #004080;
+    color: white;
+    padding: 8px;
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+/* pseudo-class */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ---------- LIST ---------- */
+ul {
+    list-style-type: square; /* lists */
+}
+
+li {
+    padding: 5px;
+}
+
+/* pseudo-element */
+li::marker {
+    color: #e70d0d;
+}
+
+/* ---------- FORM ---------- */
+input[type="text"],
+input[type="email"] {
+    padding: 6px;
+    width: 200px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+/* pseudo-class */
+input:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #0066cc;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* pseudo-class */
+input[type="submit"]:hover {
+    background-color: #078d2f;
+}
+
+/* ---------- VIDEO & AUDIO ---------- */
+video, audio {
+    margin-top: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* ---------- PSEUDO-ELEMENT ---------- */
+p::first-letter {
+    font-size: 22px;
+    font-weight: bold;
+    color: #004080;
+}

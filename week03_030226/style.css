@@ -1,0 +1,121 @@
+/* ===== GLOBAL ===== */
+body {
+    background: radial-gradient(circle at top, #1a1a2e, #0f0f1a);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #ffffff;
+}
+
+/* ===== HEADER / JUMBOTRON ===== */
+.game-header {
+    position: relative;
+
+    /* IMAGE + DARK OVERLAY */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("media/header-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+
+    border-radius: 18px;
+    box-shadow: 0 0 40px rgba(120, 0, 255, 0.8);
+}
+.game-header h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.9);
+}
+
+.game-header p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+.game-header {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/303/295/small/mountains-background-game-vector.jpg");
+}
+
+
+.game-header h2 {
+    font-weight: bold;
+}
+
+.game-header h2::after {
+    content: " 🎮";
+}
+
+/* ===== CARDS ===== */
+.game-card {
+    background: linear-gradient(145deg, #141e30, #243b55);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+}
+
+.card-title {
+    color: #00f2ff;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #dddddd;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background: linear-gradient(45deg, #00f2ff, #007bff);
+    border: none;
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #00ff87, #009e60);
+    border: none;
+}
+
+/* ===== TABLE ===== */
+table {
+    background-color: #141e30;
+    color: white;
+}
+
+table th {
+    background-color: #0f3460;
+}
+
+/* ===== AUDIO / VIDEO ===== */
+audio, video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #000000;
+    color: #bbbbbb;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}

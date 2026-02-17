@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    color: white;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #000;
+    box-shadow: 0 0 20px #00ff00;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #00ff00;
+}
+
+.logo i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ff00;
+}
+
+.user-info i {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 30px;
+    background: #00ff00;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: #00cc00;
+}
+
+/* STATS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.stat-card {
+    background: #111;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 0 15px rgba(0,255,0,0.3);
+}
+
+.stat-card i {
+    font-size: 30px;
+    color: #00ff00;
+    margin-bottom: 10px;
+}
+
+/* GAMES */
+.featured-games {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-games h2 {
+    color: #00ff00;
+    margin-bottom: 30px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.game-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0,255,0,0.2);
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ff00;
+}
+
+.game-card img {
+    width: 100%;
+}
+
+.game-card h3 {
+    color: #00ff00;
+    padding: 10px;
+}
+
+.game-card p {
+    padding: 0 10px 10px;
+}
+
+.play-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #00ff00;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.play-button:hover {
+    background: #00cc00;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    margin-top: 50px;
+}

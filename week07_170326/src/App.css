@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Button animation */
+.view-btn {
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Form Card */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 25px;
+  margin: 20px auto;
+  width: 320px;
+  border-radius: 15px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Inputs */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #00c6ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #0072ff;
+}
+
+/* Student card animation */
+.student-card {
+  background: rgba(255,255,255,0.2);
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  animation: slideUp 0.5s ease;
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Delete button */
+.delete-btn {
+  background: red;
+}
+
+/* Slide panel */
+.list-panel {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 300px;
+  height: 70vh;
+  overflow-y: auto;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+  animation: slideIn 0.5s ease;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #00c853;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: fadeSlide 0.5s ease;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
